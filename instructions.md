@@ -51,3 +51,11 @@ Atalhos para usar durante o Debug da aplicação
 2. F5 - Abrir modo debug
 3. F10 - Passar sobre uma linha, sem entrar em método internos
 4. F11 - Passar sobre uma linha e entrar em método interno
+
+
+Lei de Pareto - a forma de evoluir 500% nos seus estudos.
+
+1. Comece a documentar tudo! Estudes os conceitos.
+2. Passe esse conhecimento de forma organizada como se fosse para outra pessoa
+uma pessoa que nunca estudou sobre o assunto.
+3. Aprenda a falar sobre o assunto.
