@@ -42,3 +42,12 @@ Vá procurando mais movimentos/ comandos no teclado
 
 E procure mais sobre os modulos e funções!!
 
+
+
+
+Atalhos para usar durante o Debug da aplicação
+
+1. F9 - Marcar Breakpoint
+2. F5 - Abrir modo debug
+3. F10 - Passar sobre uma linha, sem entrar em método internos
+4. F11 - Passar sobre uma linha e entrar em método interno
