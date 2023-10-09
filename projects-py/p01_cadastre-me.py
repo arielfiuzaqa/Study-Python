@@ -34,7 +34,7 @@ dia(data de cadastro no formulário dd/mm/aaaa).
 
 
 # Módulo 1
-import random
+'''import random
 from datetime import datetime
 
 print('---------Olá, Bem-vindo a nossa Equipe dos Dragões Brancos-----------')
@@ -46,6 +46,24 @@ cartao = random.choice(cartoes)
 aniversario = datetime.strftime(input("Qual dia deseja ser seu Aniversário? "),
                                '%d/%m/%Y')
 # Módulo 2 - Está dando problema na forma em que esta
-print(f'Olá {nome}, seu registro foi concluído com sucesso no dia'+ 
-      {data_cadastro.day}/{data_cadastro.month}/{data_cadastro.year})
+print(f'Olá {nome}, seu registro foi concluído com sucesso no dia {data_cadastro.day}/{data_cadastro.month}/{data_cadastro.year}')
+print(f'Parabéns, houve um sorteio e você ganhou um cartão de compras no valor de {cartao}')'''
+
+
+# Melhorado o Módulo 1 com chatGPT 
+import random
+from datetime import datetime
+
+print('---------Olá, Bem-vindo a nossa Equipe dos Dragões Brancos-----------')
+nome = input('Digite seu nome: ')
+idade = int(input('Digite sua idade: '))
+data_cadastro = datetime.now()
+cartoes = ['R$50,00', 'R$100,00', 'R$150,00', 'R$200,00', 'R$250,00', 'R$300,00', 'R$350,00', 'R$400,00',]
+cartao = random.choice(cartoes)
+aniversario = input("Qual dia deseja ser seu Aniversário? (dd/mm/aaaa): ")
+# Curiosamente ficou igual o módulo 2
+print(f'Olá {nome}, seu registro foi concluído com sucesso no dia {data_cadastro.day}/{data_cadastro.month}/{data_cadastro.year}')
 print(f'Parabéns, houve um sorteio e você ganhou um cartão de compras no valor de {cartao}')
+
+
+
