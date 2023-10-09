@@ -119,6 +119,35 @@ else:
     print('Consultar a recepção, por favor!')
 
 
+''' Exemplo 04 - Maior de idade
+Casos a idade seja maior ou igual a 18 anos, essa pessoa é maior de idade,
+caso contrário é menor de idade
+
+Básico- Vamos lá!! 
+Vamos fazer com que as idades sejam randomicas
+'''
+import random
+idades = random.randint(10, 80)
+
+if  10 <= idades <= 17:
+    print("Menor de Idade não entra parceirinho!")
+elif 18 <= idades <= 61:
+    print('Pode entrar!!')
+else:
+    print('Tu vai morrer véi safado!')
+
+# Exemplo 04 Com código mais limpo. Expressão if condição else (Forma rápida!)
+idades = random.randint(10, 80)
+print('Pode entrar!!') if idades >= 18 else print('Menor de Idade não entra parceirinho!')
+
+
+
+# FAÇAMOS MAIS EXEMPLOS!! - VAMOS BUSCAR DESAFIOS MAIS DIFICEIS.
+
+
+
+
+
 
 
 
