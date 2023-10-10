@@ -91,3 +91,48 @@ for celular in celulares:
     for versao in versoes:
         print(f'{celular} {versao}')
 
+
+''' Interável(iterable) é um objeto que pode ser percorrido, elemento por elemento, 
+usando um loop ou uma estrutura de controle de fluxo. Em outras palavras, um iterável é 
+uma sequência de elementos que você pode iterar (ou seja, percorrer) um por um.
+
+Os iteráveis são uma parte fundamental da linguagem Python e são amplamente utilizados 
+em loops, compreensões de lista, funções que aceitam iteráveis como argumentos e muito mais.
+
+Alguns exemplos de interáveis a baixo.
+'''
+'''Listas (Lists): Uma lista é uma sequência ordenada de elementos, e você pode iterar 
+por ela usando um loop for ou outras construções de controle de fluxo.'''
+print('\nList\n')
+my_list = [1, 2, 3, 4, 5, 6, 7]
+for item in my_list:
+    print(item)
+
+'''Tuplas (Tuples): Assim como as listas, as tuplas são iteráveis e podem ser percorridas 
+da mesma forma.'''
+print('\nTurple\n')
+my_tuple = (10, 20, 30, 40, 50)
+for item in my_tuple:
+    print(item)
+
+# Strings: As strings são sequências de caracteres e também são iteráveis.
+print('\nString\n')
+my_string = "Pythonista"
+for char in my_string:
+    print(char)
+
+'''Dicionários (Dictionaries): Os dicionários em Python são iteráveis, mas você pode iterar 
+pelas chaves, pelos valores ou pelos pares chave-valor.'''
+print('\nDict\n')
+my_dict = {"a": 1, "b": 2, "c": 3}
+for key in my_dict:
+    print(key, my_dict[key])
+
+#Conjuntos (Sets): Os conjuntos também são iteráveis.
+print('\nSets\n')
+my_set = {1, 2, 3, 4, 5}
+for item in my_set:
+    print(item)
+'''Iteradores Personalizados: 
+Você pode criar seus próprios objetos iteráveis definindo uma classe que implementa 
+os métodos __iter__() e __next__().'''
