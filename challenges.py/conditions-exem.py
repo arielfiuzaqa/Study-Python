@@ -6,15 +6,19 @@ Essa variáveis são as entradas e dependendo da entrada a condição do resulta
 Aqui vamos aplicar alguns exemplos usando o que já aprendi.
 
 ''' 
-
 # Exemplo 01 => Vamos sair hoje? Condição: Se eu terminar o trabalho hoje, sim!
+print('\nExercicio 01 - Sair depois do Trabalho')
+
 trabalho_terminado = True
 if trabalho_terminado == True:
     print('Bora sair hoje!')
 else: # Caso não seja verdadeiro...
     print("Não posso sair hoje!!")
 
+print('Fim do Exercicio 01\n')
+
 # Exemplo 01 Modo Random! => Vamos sair hoje? Condição: Se eu terminar o trabalho hoje, sim!
+print('Exercicio 01 Random - Sair depois do Trabalho')
 import random
 # Gere um valor aleatório (0 ou 1)
 valor_aleatorio = random.randint(0, 1)
@@ -26,9 +30,13 @@ if trabalho_terminado:
 else:
     print("Não posso sair hoje!!")
 
+print('Fim do Exercicio 01 - Random\n')
+
 '''# Exemplo 2 - Atraso na aula, 
 Condições: Caso esteja chegando atrasado pela 3° vez, não posso!
 Mas se tiver 1 ou 2 vezes de atraso, recebo uma mensagem com aviso!'''
+print('Exercicio 02 - Atraso na aula')
+
 numero_atrasos = 2 # Estabelecido antes de rodar o código
 if numero_atrasos >= 3:
     print ("Vá para a diretoria!")
@@ -39,7 +47,11 @@ elif numero_atrasos == 1:
 else:
     print('Pode entrar!')
 
+print('Fim do Exercicio 02\n')
+
+
 # Exemplo 2 Modo Random - Atraso na aula
+print('Exercicio 02 Random - Atraso na aula')
 import random
 # Gere um número aleatório de atrasos (entre 0 e 3)
 numero_atrasos = random.randint(0, 3)
@@ -53,6 +65,8 @@ elif numero_atrasos == 1:
 else:
     print('Pode entrar!')
 
+print('Fim do Exercicio 02 - Random\n')
+
 ''' Exemplo 03 - Limite de velocidade
 Vamos multar todos aqueles que passarem do limite de velocidade.
 
@@ -61,6 +75,7 @@ Cruzou entre 50km/h a 60km/h, levou multa de 2 pontos
 Cruzou entre 61km/h a 75km/h, levou multa de 3 pontos
 Cruzou a cima de 75km/h, levou multa de 7 pontos
 '''
+print('Exercicio 03 - Multas por excesso de velocidade!')
 velocidade = 55
 if velocidade <= 50:
     print('Ok')
@@ -71,8 +86,11 @@ elif velocidade >= 61 and velocidade <=75:
 else:
     print('MULTADO EM 7 PONTOS POR EXCESSO DE VELOCIDADE!!!')
 
+print('Fim do Exercicio 03\n')
 
 # Exemplo 03 Modo Random - Limite de velocidade
+print('Exercicio 03 Random - Multas por excesso de velocidade!')
+
 import random
 # Gere uma velocidade aleatória (entre 30 e 80)
 velocidade = random.randint(30, 80)
@@ -86,12 +104,17 @@ elif velocidade >= 61 and velocidade <= 75:
 else:
     print('MULTADO EM 7 PONTOS POR EXCESSO DE VELOCIDADE!!!')
 
+
+print('Fim do Exercicio 03 - Random\n')
+
 ''' !!! Desafio !!! - Salão de beleza - Corte de cabelo
 -> Se o cabelo estiver com ou abaixo de 20cm você paga o valor de R$ 50,00
 -> Se o cabelo estiver entre 21cm a 30cm você paga o valor de R$70,00
 -> Se o cabelo estiver entre 31cm a 50cm você paga o valor de R$100,00
 -> Se o cabelo estiver acima de 51cm consultar na recepção
 '''
+
+print('Desafio - Salão de Beleza - Corte de Cabelo!')
 tamanho_cabelo = 51
 if tamanho_cabelo <= 20:
     print('Pagar R$50,00')
@@ -102,9 +125,11 @@ elif 31 <= tamanho_cabelo <= 50:
 else:
     print('Consultar a recepção, por favor!')
 
-''' !!! Desafio Modo Random !!! - Salão de beleza - Corte de cabelo'''
-import random
+print('Fim do Desafio Salão de Beleza\n')
 
+''' !!! Desafio Modo Random !!! - Salão de beleza - Corte de cabelo'''
+print('Desafio Random - Salão de Beleza - Corte de Cabelo!')
+import random
 # Gere um tamanho de cabelo aleatório (entre 1 e 60)
 tamanho_cabelo = random.randint(1, 60)
 
@@ -118,6 +143,7 @@ elif 31 <= tamanho_cabelo <= 50:
 else:
     print('Consultar a recepção, por favor!')
 
+print('Fim do Desafio Salão de Beleza - Random\n')
 
 ''' Exemplo 04 - Maior de idade
 Casos a idade seja maior ou igual a 18 anos, essa pessoa é maior de idade,
@@ -126,6 +152,7 @@ caso contrário é menor de idade
 Básico- Vamos lá!! 
 Vamos fazer com que as idades sejam randomicas
 '''
+print('Exercicio 04 Random - Maior de Idade')
 import random
 idades = random.randint(10, 80)
 
@@ -137,9 +164,11 @@ else:
     print('Tu vai morrer véi safado!')
 
 # Exemplo 04 Com código mais limpo. Expressão if condição else (Forma rápida!)
+print('\nExercicio 04 - Maior de Idade - Forma Limpa') # \n -> Quebra linha
 idades = random.randint(10, 80)
 print('Pode entrar!!') if idades >= 18 else print('Menor de Idade não entra parceirinho!')
 
+print('\nFim do Exercicio 04 - Random')
 
 
 # FAÇAMOS MAIS EXEMPLOS!! - VAMOS BUSCAR DESAFIOS MAIS DIFICEIS.
