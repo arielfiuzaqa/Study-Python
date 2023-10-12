@@ -35,8 +35,3 @@ while True:
     resposta = input('Continuar andando? ')
     if resposta not in ('sim', 's'):
         break
-
-# Mini-Game Turtle - Mode Profissinal - Realizar!
-
-
-
