@@ -187,3 +187,5 @@ def contagem_de_letras(nome, *args, **kwargs):
         print(kwarg)
 
 contagem_de_letras('Gugu',5,7,9,11,a=1,b=2,c=3)
+
+# Próximo - Decorators
