@@ -30,8 +30,6 @@ print('\nInterando sobre um dicionário\n')
 for item in dict_pessoa.items():
     print(item[1]) # Intera item por item - Organizado
 
-
-
 # Grupo de Listas de Listas com caracteristicas dentro de um Dicionário
 
 
