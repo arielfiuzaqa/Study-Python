@@ -181,3 +181,34 @@ print(numeros) # Resultado [10, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 
 ''' Trabalhar com Multiplas Listas - Zip '''
 # Combinar multiplas listas em pares
+print('\nCombinação de Multiplas Listas\n')
+a_lista = ['A', 'B', 'C', 'D', 'E', 'F']
+b_lista = [1, 2, 3, 4, 6, 7]
+c_lista = [10, 20, 30, 40, 50, 60]
+# Inteirando as listas a e b temos
+for a,b in zip(a_lista, b_lista): # Imprime em ordem sequencial cada item das listas
+    print(a)
+    print(b)
+# Incluindo na frase duas listas de mesmo tamanho
+print('\nIncluindo duas Listas de mesmo tamanho em uma frase\n')
+produtos = ['produto 1','produto 2','produto 3','produto 4','produto 5']
+precos = [50, 100, 150, 200, 250]
+for a,b in zip(produtos, precos): # Com duas listas do mesmo tamanho
+    print(f'Salvando produto {a} valor R$ {b}') # Bem simples O.O
+
+# Listas de Tamanhos diferentes
+from itertools import zip_longest # Como vou ate o ultimo item da lista mais longa
+print('\nListas de Tamanhos Diferentes\n')
+titulos = ["Titulo 1", "Titulo 2", "Titulo 3", "Titulo 4"]
+descricao = ['Desc 1', 'Desc 2', 'Desc 3']
+
+for titulos, descricao in zip_longest(titulos, descricao):
+    print(f'Encontramos o {titulos} descrição: {descricao}')
+
+''' DESAFIOS 🥇 - Usando as listas abaixo:'''
+print('\nDesafio Zip Longest - Listas de Diferentes tamanhos\n')
+from itertools import zip_longest
+produtos = ['Produto 1', 'Produto 2', 'Produto 3', 'Produto 4', 'Produto 5']
+precos = ['R$500,00', 'R$1500,00', 'R$2700,00', 'R$5000,00']
+for produto, preco in zip_longest(produtos, precos):
+    print(f'Produto: {produto} encontramos no valor de {preco}')
