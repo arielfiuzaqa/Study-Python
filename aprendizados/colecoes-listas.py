@@ -223,4 +223,39 @@ valores.sort() # Ordenando em ordem crescente
 print('Nomes:\n', names)
 print('Valores:\n', valores)
 
+# Utilizando Itemgetter
+
+# Ordene a lista de produtos abaixo pelo preço em ordem crescente - Pelos indices
+print('\nItemgetter - Lista sem chaves\n')
+
+from operator import itemgetter
+
+prod = [
+    {'nome': 'Celular', 'preco': 1500},
+    {'nome': 'Monitor', 'preco': 500},
+    {'nome': 'Microfone', 'preco': 300}
+]
+
+# Ordenar a lista de dicionários pelo preço
+prod_ordenados = sorted(prod, key=itemgetter('preco'))
+print(prod_ordenados)
+
+
+# Ordene em ordem descrescente a lista de equipamento_filmagem por valor do equipamento
+print('\nItemgetter - Atraves do Indice\n')
+
+equipamento_filmagem = [
+    ('Tripé', 300),
+    ('Câmera', 1700),
+    ('Iluminação', 200),
+]
+equipamento_filmagem.sort(key=itemgetter(1), reverse=True)
+print(equipamento_filmagem)
+
+
+# Ordene em ordem crescente a cotacao_moedas com base no valor da moeda
+print('\nItemgetter - Moedas\n')
+cotacao_moedas = [['usd', 5.25], ['brl', 1.56], ['eur', 6.47]]
+cotacao_moedas.sort(key=itemgetter(1))
+print(cotacao_moedas)
 

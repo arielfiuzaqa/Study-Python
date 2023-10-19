@@ -70,3 +70,57 @@ def ponto():
     print("Ponto registrado")
 
 ponto()
+
+# Exercicio 01 - Area do Retângulo #
+print('\nExercicio #01 - Area do Retângulo\n')
+def validar_numeros_positivos(f):
+    def validacao_area(largura, altura):
+        if largura <= 0 or altura <= 0:
+            raise ValueError("A largura e a altura devem ser números positivos.")
+        return f(largura, altura)
+    return validacao_area
+
+@validar_numeros_positivos
+def calcular_area_retangulo(largura, altura):
+    return largura * altura
+# Inputs da largura e altura do retângulo
+largura = float(input("Digite a largura do retângulo: "))
+altura = float(input("Digite a altura do retângulo: "))
+# Calculo e resultado da área
+area = calcular_area_retangulo(largura, altura)
+print(f"A área do retângulo é {area}")
+
+# Exercicio #02 - Volume de um cubo
+print('\nExercicio #02 - Volume de um Cubo\n')
+def calcular_volume_do_cubo(lado):
+    if lado <= 0:
+        raise ValueError("O lado do cubo deve ser um número positivo.")
+    volume = lado ** 3
+    return volume
+
+try:
+    lado = float(input("Digite o comprimento de um lado do cubo: "))
+    volume = calcular_volume_do_cubo(lado)
+    print(f"O volume do cubo é {volume}")
+except ValueError as e:
+    print(f"Erro: {e}")
+
+# Exercicio #03 - Volume do Paralelepipedo
+print('\nExercicio #03 - Volume do Paralelepipedo\n')
+def calcular_volume_do_paralelepipedo(comprimento, largura, altura):
+    if comprimento <= 0 or largura <= 0 or altura <= 0:
+        raise ValueError("Os tamanhos devem ser números positivos.")
+    volume = comprimento * largura * altura
+    return volume
+
+try:
+    comprimento = float(input("Digite o comprimento: "))
+    largura = float(input("Digite a largura: "))
+    altura = float(input("Digite a altura: "))
+    volume = calcular_volume_do_paralelepipedo(comprimento, largura, altura)
+    print(f"O volume do paralelepípedo é {volume}")
+except ValueError as e:
+    print(f"Erro: {e}")
+
+
+
