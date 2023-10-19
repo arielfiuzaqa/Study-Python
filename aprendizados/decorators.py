@@ -6,6 +6,7 @@
  da definição de uma função.
 '''
 # Simple exemple:
+print('\nSimple Exemple\n')
 def meu_decorator(funcao):
     def wrapper(): # wrapper é qualquer nome, poderia ser qualquer outro nome
         print("Antes da função ser chamada")
@@ -13,18 +14,16 @@ def meu_decorator(funcao):
         print("Depois da função ser chamada")
     return wrapper
 
-#@meu_decorator # Com essa linha ativada não precisa da linha 20 e 21
+@meu_decorator # Com essa linha ativada não precisa da linha 20 e 21
 def saudacao():
     print("Olá, mundo!")
 
-result = meu_decorator(saudacao) # Linha 20
-result() # Linha 21
+saudacao()
 
 
 # Exemple 2: 
 print('\nExemplo 2 - Depositando dinheiro\n')
 from datetime import datetime
-
 def depositar_dinheiro():
     print('Depositando Dinheiro')
 
@@ -51,8 +50,10 @@ def pai(numero):
         print('Sou filho 2')
     if numero == 1:
         return filho_1
+    elif numero == 2:
+        return filho_2
     
-resultado = pai(1)
+resultado = pai(2)
 resultado() # Só pode executar se eu passo o parametro para a variavel resultado
 
 # Exemple 4: 

@@ -212,3 +212,15 @@ produtos = ['Produto 1', 'Produto 2', 'Produto 3', 'Produto 4', 'Produto 5']
 precos = ['R$500,00', 'R$1500,00', 'R$2700,00', 'R$5000,00']
 for produto, preco in zip_longest(produtos, precos):
     print(f'Produto: {produto} encontramos no valor de {preco}')
+
+############################################ ORDENANDO COLEÇÕES ###################################
+print('\nOrdenando de Forma Crescente\n')
+names = ['Zeck', 'Xangu', 'Abdael', 'Anexus', 'Pasquinel', 'Edrus']
+valores = [31, 55, 10, 21, 7, 18, 99, 91]
+
+names.sort() # Ordenando em ordem crescente
+valores.sort() # Ordenando em ordem crescente
+print('Nomes:\n', names)
+print('Valores:\n', valores)
+
+
