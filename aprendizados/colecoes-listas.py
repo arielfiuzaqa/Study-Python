@@ -239,6 +239,7 @@ prod = [
 # Ordenar a lista de dicionários pelo preço
 prod_ordenados = sorted(prod, key=itemgetter('preco'))
 print(prod_ordenados)
+print(type(prod))
 
 
 # Ordene em ordem descrescente a lista de equipamento_filmagem por valor do equipamento
@@ -251,6 +252,7 @@ equipamento_filmagem = [
 ]
 equipamento_filmagem.sort(key=itemgetter(1), reverse=True)
 print(equipamento_filmagem)
+print(type(equipamento_filmagem))
 
 
 # Ordene em ordem crescente a cotacao_moedas com base no valor da moeda
@@ -258,4 +260,32 @@ print('\nItemgetter - Moedas\n')
 cotacao_moedas = [['usd', 5.25], ['brl', 1.56], ['eur', 6.47]]
 cotacao_moedas.sort(key=itemgetter(1))
 print(cotacao_moedas)
+print(type(cotacao_moedas))
+
+
+
+# Como Criar uma Lista? - Usando Loops e Range()
+print('\nCriando Lista - Loop e Range()\n')
+numeros = []
+for i in range(5):
+    numeros.append(i)
+print(numeros)
+
+# Map
+print('\nMAP\n')
+nomes = ['Larissa', 'Daniela', 'Carolzinha', 'Marcus']
+
+def aprovados(nome):
+    return nome + ' APROVADO'
+
+print(list(map(aprovados, nomes)))
+
+# MAP - Exemplo 2
+print('\nMap - Exemplo 2\n')
+numeros = [1, 2, 3, 4, 5]
+resultado = map(lambda x: x * 2, numeros)
+lista_duplicada = list(resultado)
+print(lista_duplicada)
+
+
 

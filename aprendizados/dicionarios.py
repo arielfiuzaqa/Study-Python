@@ -15,6 +15,11 @@ print("Nome:", pessoa["nome"])  # Acesso ao valor da chave "nome"
 print("Idade:", pessoa["idade"])  # Acesso ao valor da chave "idade"
 print("Cidade:", pessoa["cidade"])  # Acesso ao valor da chave "cidade"
 print(pessoa) # Acessa todos os valores em forma de dicionario
+print(type(pessoa))
+print(type(pessoa["nome"]))
+print(type(pessoa["idade"]))
+print(type(pessoa["cidade"]))
+
 # Alterando valores - Ainda temos dessa outra forma
 print('\nAlterando Valores\n')
 pessoa_1 = dict(nome='Carol', idade=21, altura=1.71) # Sai na forma de dicionario ainda
