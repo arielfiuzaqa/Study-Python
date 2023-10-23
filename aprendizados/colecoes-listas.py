@@ -287,5 +287,50 @@ resultado = map(lambda x: x * 2, numeros)
 lista_duplicada = list(resultado)
 print(lista_duplicada)
 
+''' Filtrando dados de uma coleção - Filter.  Retorna aqueles dados que são avaliados como
+verdadeiros atendendo um determinado parametro'''
+print('\nFILTER\n')
+list_nomes = ['Larissa', 'Joana', 'Claudisleia', 'Diovanni']
 
+def pessoas_aprovada(pessoa):
+    if pessoa == 'Claudisleia':
+        return True
+    else:
+        return False
+# Observe a construção
+print(list(filter(pessoas_aprovada, list_nomes)))
+# Tudo que foi considerado como false no reflexo do pedido
+print(list(map(pessoas_aprovada,list_nomes)))
+
+
+# Exemplo 2 - Filter
+print('\nExemplo 2 - Filter\n')
+pinturas = []
+
+def eh_antiguidade(pintura):
+    if pintura[2] < 1800:
+        return True
+    else:
+        return False
+    
+print(list(filter(eh_antiguidade, pinturas)))
+# Observe as respostas
+print(list(map(eh_antiguidade, pinturas)))
+
+# DESAFIO 1 🥇
+print('\nDesafio Filter\n')
+'''Usando a lista abaixo, filtre apenas as vagas com salário acima de R$2500'''
+vagas = [
+    ['vaga 1', 1200],
+    ['vaga 2', 2550],
+    ['vaga 3', 5000]
+]     
+def salario(valor):
+    if valor[1] > 2500:
+        return True
+    else:
+        return False
+    
+print(list(filter(salario, vagas)))
+print(list(map(salario, vagas)))
 
