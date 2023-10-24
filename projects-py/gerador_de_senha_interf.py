@@ -39,6 +39,7 @@ class PassGen:
         chars = random.choices(char_list, k=int(valores['total_chars']))
         new_pass = ''.join(chars)
         return new_pass
+    
     # Salvando Senhas no Arquivo de senhas.txt
     def salvar_senha(self, nova_senha, valores):
         with open('senhas.txt', 'a', newline='') as arquivo:
