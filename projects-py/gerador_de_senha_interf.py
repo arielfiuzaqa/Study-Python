@@ -33,12 +33,13 @@ class PassGen:
                 print(nova_senha)
                 self.salvar_senha(nova_senha, valores)
 
+    # Gerando Senha de Forma Randômica
     def gerar_senha(self, valores):
         char_list = 'ABCDEFGHIJKLMNOPQRSTUVXZabcdefghijklmnopqrstuvxz123456789@#$%&!?*'
         chars = random.choices(char_list, k=int(valores['total_chars']))
         new_pass = ''.join(chars)
         return new_pass
-
+    # Salvando Senhas no Arquivo de senhas.txt
     def salvar_senha(self, nova_senha, valores):
         with open('senhas.txt', 'a', newline='') as arquivo:
             arquivo.write(f"site: {valores['site']}, usuario: {valores['usuario']}, nova_senha: {nova_senha}\n")
