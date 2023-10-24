@@ -72,3 +72,8 @@ with open('desafio_json','w',encoding='utf-8') as arquivo_json:
     json.dump(usuarios_json, arquivo_json)
 
 
+
+
+
+
+
