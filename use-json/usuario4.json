@@ -1,0 +1,31 @@
+{
+    "usuários": [
+    {
+    "nome": "Kukukan",
+    "telefone": "47-99224-8852",
+    "permissões": 
+    ["basico",
+    "intermediário",
+    "administrador"
+],
+    "admin": true,
+    "plano": {
+        "nome": "basico",
+        "preco": "R$20,00"
+    }
+    },
+    {
+        "nome": "José",
+        "telefone": "31-96031-1234",
+        "permissões": 
+        ["basico",
+        "intermediário"
+        ],
+        "admin": false,
+        "plano": {
+            "nome": "pro",
+            "preco": "R$60,00"
+        }
+        }
+    ]
+}
