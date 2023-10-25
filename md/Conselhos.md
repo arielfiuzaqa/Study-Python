@@ -13,4 +13,5 @@ R4:. Se você seguiu os passos anteriores e quebrou um grande problema em proble
 5. Mito: Não existe código perfeito.
 R5:. Todos os códigos possuem algum tipo de erro ou podem ser infinitamente melhorados para sua total performance.
 
-
+6. Usuário não é Programador.
+R6:. As mensagens de erros devem aparecer pensando nas pessoas que são totalmente leigas, então mensagens claras que qualquer um possa entender ate uma criança. Seja direto com as mensagens e especifico para que ele possa fazer algo.
