@@ -23,10 +23,39 @@ maneira única. Isso permite tratar objetos de diferentes classes de forma gené
 Abstração: A simplificação de objetos complexos, fornecendo uma visão de alto nível de suas 
 características e funcionalidades.
 
+Vou começar com uma pequena ideia relacionado a uma quantidade de codigo que quero que execute
 '''
-# Classes
+# Código Solto - Poderia ter mais.. Só exemplificando
+marca = input('Digite a marca do seu computador: ')
+memoria = input('Digite a quantidade de memoria ram: ')
 
+print(f'Seu computador é da marca: {marca}')
+print(f'Seu computador possui {memoria}')
 
+# Função: Transformei o código acima em uma função
+def exibir_informacao_pc():
+    marca = input('Digite a marca do seu computador: ')
+    memoria = input('Digite a quantidade de memoria ram: ')
+
+    print(f'Seu computador é da marca: {marca}')
+    print(f'Seu computador possui {memoria}')
+
+exibir_informacao_pc() # Chama a função para ser executada
+
+'''Transformando em uma class posso reservar em um outro arquivo e usar sempre que precisar para
+execução de algum item que eu queira'''
+
+# Class - Exemplo simples
+class Computador:
+    def __init__(self, marca, memoria):
+        self.marca = marca
+        self.memoria_ram = memoria
+        self.placa_de_video = 'NVIDIA'
+# Instanciando a Class
+computador1 = Computador('TeuCeu', '256GB')
+print(computador1.marca)
+print(computador1.memoria_ram)
+print(computador1.placa_de_video)
 
 # Exemplo de Class 
 print('\nExemplo de Class\n')
