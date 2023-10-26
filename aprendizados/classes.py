@@ -78,7 +78,33 @@ print(f"Marca: {meu_carro.marca}, Modelo: {meu_carro.modelo}, Ano: {meu_carro.an
 
 
 
+# Métodos de uma classe?
+print('\nMétodo Class\n')
+class MinhaClasse:
+    contador = 0  # Variável de classe para contar instâncias
 
+    def __init__(self, nome):
+        self.nome = nome
+        MinhaClasse.contador += 1  # Incrementa o contador ao criar uma instância
+
+    @classmethod
+    def obter_contagem(cls):
+        return cls.contador
+
+    @classmethod
+    def criar_instancia_com_nome(cls, nome):
+        return cls(nome)
+
+# Criando instâncias da classe
+instancia1 = MinhaClasse("Primeira Instância")
+instancia2 = MinhaClasse("Segunda Instância")
+
+# Usando o método de classe para obter a contagem de instâncias
+print("Número de instâncias criadas:", MinhaClasse.obter_contagem())
+
+# Usando o método de classe para criar uma nova instância
+nova_instancia = MinhaClasse.criar_instancia_com_nome("Terceira Instância")
+print(nova_instancia.nome)
 
 
 

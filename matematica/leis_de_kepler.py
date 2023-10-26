@@ -3,9 +3,7 @@
 Solicitamos ao usuário que insira o raio médio da órbita (semieixo maior) em metros e o período de revolução do planeta em segundos.
 
 Usamos a fórmula  
-
 para calcular a velocidade orbital, onde v é a velocidade orbital, r é o raio médio da órbita e T é o período orbital.
-
 Exibimos a velocidade orbital com duas casas decimais usando print.'''
 
 import math
