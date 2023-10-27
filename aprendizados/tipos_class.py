@@ -102,24 +102,39 @@ comp_escritorio = Computador.computador_escritorio('8GB')
 # Config. p/ clientes de trabalho pesado (games, video, 3D)
 comp_trabalho = Computador.computador_config_pesado('16GB')
 # Exibindo os dados
-print('#######################################')
+print('#############################################################')
 comp_escritorio.exibir_dados_do_computador()
 comp_trabalho.exibir_dados_do_computador()
 
 
 # Métodos Estáticos(Static Methods) - Não utiliza as instâncias através do metodo self e não modificam através do cls
 # Quando utilizamos várias vezes o mesmo código e queremos que se torne uma funcionalidade para sempre usar.
-#print('\nMétodos Estáticos(Static Methods)\n')
+print('\nMétodos Estáticos(Static Methods)\n')
+class Pc:
+    sistema_operacional = 'Windowns 11'
 
-@staticmethod
-def roda_programa_pesado(memoria_ram):
-    if memoria_ram >= 8:
-        return True
-    else:
-        return False
+    def __init__(self, marca, memoria_ram, placa_de_video):
+        self.marca = marca
+        self.memoria_ram = memoria_ram
+        self.placa_de_video = placa_de_video
 
-print(Computador.roda_programa_pesado(10))
-    
+    def exibir_dados_do_computador(self):
+        print(self.marca, self.memoria_ram, self.placa_de_video, self.sistema_operacional)
+
+    @staticmethod
+    def rod_programa_pesado(memoria_ram):
+        if memoria_ram >= 8:
+            return True
+        else:
+            return False
+
+# Criar uma instância da classe Computador
+computador = Pc('Dell', '16GB', 'Placa de Video de Alto Nivel')
+
+# Chamar o método estático a partir da instância
+resultado = computador.rod_programa_pesado(10)
+print(resultado)
+
 
 
 
