@@ -48,5 +48,3 @@ print(issubclass(CameraSeguranca, Camera)) # A que imagino que seja as classes (
 print(issubclass(Cameraceular, Camera)) # A que imagino que seja as classes (filho , pai)
 
 
-
-
