@@ -134,7 +134,3 @@ computador = Pc('Dell', '16GB', 'Placa de Video de Alto Nivel')
 # Chamar o método estático a partir da instância
 resultado = computador.rod_programa_pesado(10)
 print(resultado)
-
-
-
-
