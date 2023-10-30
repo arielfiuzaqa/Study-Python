@@ -7,8 +7,8 @@ import os
 class TelegramBot():
 
   def __init__(self):
-    token = '6297401523:AAFbir_tq_ZeyzlfXZc8IXkaErQ_AbvoYuE'
-    self.url_base = f'https://api.telegram.org/bot{token}'
+    #token = '6297401523:AAFbir_tq_ZeyzlfXZc8IXkaErQ_AbvoYuE'
+    #self.url_base = f'https://api.telegram.org/bot{token}'
 
   # Iniciar o Bot
   def Iniciar(self):

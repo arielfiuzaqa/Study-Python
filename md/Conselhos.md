@@ -18,17 +18,34 @@ R6:. As mensagens de erros devem aparecer pensando nas pessoas que são totalmen
 
 7. Como Criar Funções Limpas e Elegantes
 -> Dê nomes significativos as suas funções (Fica mais fácil de identificar do que se trata)
-
 -> Funções devem ser pequenas e fazer apenas uma coisa. (Pensando sempre em uma manuntenção futura e saber descrever a função mostra dominio)
-
 -> Quanto menor a quantidade de argumentos melhor (Só caso necessário e no máximo 3)
-
 -> Use funções para organizar seu código e economizar linhas de código (DRY - Don't Repeat Your-self).
 
 
+8. Como Transfomar Ideias em Software?
+R8:.
+Passo 1: Ter uma ideia ou pegar uma ideia com alguém e anotar tudo sobre ela. Busque pegar o máximo de detalhes
+Passo 2: Agora quebre sua ideia em menores passos/ partes
+Passo 3: Organize e comece a trabalhar nas pequenas tarefas, uma a uma. Uso de software de organização de projeto é opcional, porém recomendado(Trello/ Note/ Bloco de Notas/ Papel e caneta) - Usando a metodologia Kanban(ToDO/Doing/Done).
+Passo 4: Preencha as lacunas do conhecimento, quando necessário.
+Passo 5: Publique seu projeto e acrescente ele ao seu portfólio.
 
 
-=========================================== Resumão ==============================================
+9. O que são Módulos?
+R9:. Módulo é um bloco de códigos reutilizável.
+
+10. Porque eu devo usar módulos?
+R10:. Para evitar conflitos entre pacotes diferentes.
+
+11. O que são ambientes virtuais?
+R11:. Ambiente virtual é uma instância isolada de Python.
+
+
+
+
+
+======================================================= Resumão =======================================================
 O processo de aprendizado da programação envolve muitos conceitos, técnicas e práticas. Aqui está os pilares principais que devem ser um guia para a construção do meu aprendizado.
 
 1° Variaveis: Como armazenar e usar informações e Aprendi os diferentes tipos de variaveis.
@@ -39,6 +56,7 @@ O processo de aprendizado da programação envolve muitos conceitos, técnicas e
 
 4° Coleções: São usadas para armazenar e gerenciar múltiplos valores de dados em uma única estrutura. Elas são úteis para organizar, acessar e manipular conjuntos de elementos, como listas(list), tuplas(tuple), dicionários(dict) e conjuntos. As coleçoes facilitam a interação, pesquisa e manipulação de dados.
 
+5° Classes: As classes servem para organizar nosso código, reutiliza-lo como comportamento, herdar e controlar propriedades, gerenciar dados e instâncias dentro do nosso código.
 
 
 
