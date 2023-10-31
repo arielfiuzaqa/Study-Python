@@ -33,13 +33,33 @@ Passo 5: Publique seu projeto e acrescente ele ao seu portfólio.
 
 
 9. O que são Módulos?
-R9:. Módulo é um bloco de códigos reutilizável.
+R9:. Módulo é um bloco de códigos reutilizável. Um arquivo python, nada mais e nada menos. Onde você pode usa-ló em várias aplicações que desejar dependendo da forma com que você crie esse módulo. São puxados da seguinte maneira
+Exemplo: O "as" é opcional para dar um apelido a função
+from "nome do módulo" import "nome da função" as "nf"
 
 10. Porque eu devo usar módulos?
 R10:. Para evitar conflitos entre pacotes diferentes.
 
-11. O que são ambientes virtuais?
-R11:. Ambiente virtual é uma instância isolada de Python.
+11. Quando usar módulos?
+R11:. Quando for preciso deixar seu código muito mais claro e fácil de entender.
+1° - Separar funcionalidades relacionadas(Separando os Modulos em funcionalidades)
+2° - Não acoplar o seu código(É mais fácil fazer manuntenção em um código que sei onde encontrar)
+3° - Não ter uma arquivo gigante(Clear Code - Tornando tudo mais limpo e entendível)
+
+12. Módulos VS Pacote
+R12:. Um módulo é algo individual como um arquivo e possui um nome próprio, já o pacote é feito de vários módulos individuais na sua construção e seu nome tem __init__ exemplo. Isso dentro de uma pasta que comporta todos os módulos relacionados aquela identidade de pacote. Assim temos exemplo:
+
+from imagens(nome da pasta).modulo2(nome do módulo usado) import "nome da função"
+
+Resposta do ChatGPT
+Em Python, um módulo é um arquivo que contém definições e instruções da linguagem Python. O nome do arquivo é o nome do módulo com a extensão .py anexada. Qualquer arquivo Python pode ser considerado um módulo, desde que possua definições e instruções da linguagem 1.
+
+Por outro lado, um pacote é uma forma de estruturar o namespace do módulo Python usando “nomes de módulo pontilhados”. Basicamente, um pacote Python é um diretório que contém módulos. Para utilizar um módulo de um pacote, basta importá-lo utilizando os nomes pontilhados 1.
+
+Em resumo, a diferença entre um pacote e um módulo em Python é que o pacote é uma coleção de módulos organizados em uma hierarquia de diretórios. O pacote é usado para organizar os módulos em subpacotes, permitindo que inúmeros módulos de mesmo nome coexistam sem interferência 1.
+
+13. O que são ambientes virtuais?
+R13:. Ambiente virtual é uma instância isolada de Python.
 
 
 

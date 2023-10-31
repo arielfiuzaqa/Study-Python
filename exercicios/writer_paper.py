@@ -34,4 +34,18 @@ mensagem_formatada = mensagem.format(nome, altura=altura, idade=idade)
 
 print(mensagem_formatada)
 
-
+# Outro exemplo
+# Definindo as variáveis
+nome = "João"
+idade = 30
+altura = 1.80
+# Criando uma string formatada
+mensagem = "Olá, meu nome é {} e eu tenho {} anos. Minha altura é {} metros."
+# Criando strings formatadas com base nas mesmas variáveis
+mensagem1 = mensagem.format(nome, idade, altura)
+mensagem2 = mensagem.format("Maria", 25, 1.65)
+mensagem3 = mensagem.format("Ermanos", 99, 2.22)
+# Imprimindo as strings formatadas
+print(mensagem1)
+print(mensagem2)
+print(mensagem3)
