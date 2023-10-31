@@ -33,3 +33,5 @@ mensagem = "Eu me chamo {} e tenho apenas {idade} e {altura} de altura, você qu
 mensagem_formatada = mensagem.format(nome, altura=altura, idade=idade)
 
 print(mensagem_formatada)
+
+
