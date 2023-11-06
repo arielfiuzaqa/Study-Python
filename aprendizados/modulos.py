@@ -9,3 +9,14 @@ av()
 dv()
 
 
+# Como usar o if__name_ == '__main__'
+
+from video import ligar_carro
+from video import ligar_moto
+
+ligar_carro()
+ligar_moto()
+
+if __name__ == '__main__':
+    print('Ligando Veiculos')
+    print(f'Estamos no arquivo {__name__}')

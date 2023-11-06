@@ -13,3 +13,18 @@ def aumentar_volume():
     print('Aumentando Volume')
 def diminuir_volume():
     print('Diminuindo Volume')
+
+
+def ligar_carro():
+    print("Ligando Carro")
+
+if __name__ == '__main__':
+    print('Tirando o Lamborguinni da garagem')
+    print(f'Estamos no arquivo {__name__}')
+
+def ligar_moto():
+    print("Ligando moto")
+
+if __name__ == '__main__':
+    print('Tirando a XR da garagem')
+    print(f'Estamos no arquivo {__name__}')

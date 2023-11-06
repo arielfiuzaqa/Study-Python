@@ -58,8 +58,23 @@ Por outro lado, um pacote é uma forma de estruturar o namespace do módulo Pyth
 
 Em resumo, a diferença entre um pacote e um módulo em Python é que o pacote é uma coleção de módulos organizados em uma hierarquia de diretórios. O pacote é usado para organizar os módulos em subpacotes, permitindo que inúmeros módulos de mesmo nome coexistam sem interferência 1.
 
-13. O que são ambientes virtuais?
-R13:. Ambiente virtual é uma instância isolada de Python.
+13. Como usar o if__name_ == '__main__' ?
+É usado em Python para determinar se um arquivo Python está sendo executado como um programa principal ou se está sendo importado como um módulo em outro programa. Isso é útil quando você deseja separar o código que deve ser executado quando o arquivo é o programa principal do código que é apenas reutilizável em outros lugares.
+
+O bloco if __name__ == '__main__': é seguido pelo código que você deseja executar quando o arquivo é o programa principal. 
+
+14. Pypi - Encontre bibliotecas para seu projeto (https://pypi.org/)
+
+15. Como gerenciar os pacotes da nossa máquina local?
+R15:.
+1° Usamos o pip list no cmd para listar todos os pacotes/ módulos que temos instalados em seu pc
+2° Depois de verificar que o pacote não esta instalado, instale o pacote com o pip instal <modulo/pacote>
+3° Caso queira atualizar seria melhor fazer um pip unistall <biblioteca> e depois o pip install <biblioteca>
+4° Para instalar versões especificas de um módulo com isso basta pip install <modulo>==<versão>
+OBS: 8 Conteúdo aula 9 sobre publicação no pypi
+
+16. O que são ambientes virtuais?
+R16:. Ambiente virtual é uma instância isolada de Python.
 
 
 
@@ -81,6 +96,9 @@ O processo de aprendizado da programação envolve muitos conceitos, técnicas e
 
 
 
+====================================================================================================================
+Aulas Muito importantes
 
+Capitulo 8 - aula 9 - Como PUBLICAR SEU pacote para Pypi
 
 
