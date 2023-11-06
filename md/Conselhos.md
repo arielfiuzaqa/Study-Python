@@ -73,9 +73,70 @@ R15:.
 4° Para instalar versões especificas de um módulo com isso basta pip install <modulo>==<versão>
 OBS: 8 Conteúdo aula 9 sobre publicação no pypi
 
-16. O que são ambientes virtuais?
-R16:. Ambiente virtual é uma instância isolada de Python.
+16. O que são ambientes virtuais(venv)?
+R16:. Ambiente virtual é uma instância isolada de Python. Capacidade de isolar as depedências que cada projeto possui, assim cada ambiente vai depender de dependências e módulos diferentes sem um interferir no outro.
 
+Para iniciar deve abri o powersell e digitar o comando Set-ExecutionPolicy Unrestricted -Force -> Esse comando cria um ambiente virtual.
+
+Entre no local onde quer executar o venv e digite python -m venv <Nome a sua escolha> - Após criar aperte ls para verificar que foi realmente criado o venv.
+
+Para ativar o ambiente virtual para fazer as instalações apenas dentro dele, use .\pasta onde esta o venv\Scripts\activate - Para saber se esta no venv pasta ver o nome do seu venv na linha. Usando o pip lista vai verificar que tem poucas bibliotecas que é o que queriamos ver dentro do venv, assim podemos instalar apenas as que são necessárias para o projeto.
+
+Siga as sugestões que vão aparecer para deixar o ambiente pronto para ser usado de atualização do pip 
+python -m pip install --upgrade pip 
+
+Você também pode desinstalar as bibliotecas que quiser, e quando for colocar o projeto para a nuvem é importante de diga as bibliotecas e versões que você usou para criar. E uma forma de fazer isso é usando o comando pip freeze > requirements.txt
+
+Agora queremos voltar ao ambiente global, basta sair do venv usando deactivate + enter
+
+Para poder instalar todas as bibliotecas de um projeto devemos instalar todas as bibliotecas no requirements.txt de uma vez só utilizando pip install -r .\requiremente.txt
+
+
+17. Por que usar um Ambiente virtual(venv)?
+R17:. O Ambiente virtual permite que você possa usar apenas os recursose bibliotecas que você possa precisar
+
+
+18. Refatoração?
+R18:. refere-se ao processo de reestruturar o código-fonte de um programa, alterando sua estrutura interna ou organização, sem modificar seu comportamento externo. O objetivo da refatoração é melhorar a qualidade do código, tornando-o mais legível, manutenível e eficiente, sem alterar sua funcionalidade.
+
+ctrol + shift + r entra na forma de criar uma class para poder usar o código que você selecionou como uma função.
+
+ctrol + shift + r selecionando Extract Variable conseguimos criar um method/ variavel para alguma formula.
+
+Muito bom e muito útil de ser utilizado.
+
+
+19. APIs - Um universo de possibilidades
+R19:.  São conjuntos de regras e protocolos que permitem que diferentes componentes de software se comuniquem entre si. Uma API define os métodos e estruturas de dados disponíveis para interação com uma biblioteca, serviço, aplicativo ou plataforma externa. As APIs desempenham um papel fundamental na integração de sistemas e no desenvolvimento de software, permitindo que desenvolvedores acessem funcionalidades específicas sem precisar entender a complexidade interna dessas funcionalidades.
+
+Utilizadas como:
+
+> Módulos e Bibliotecas: fornecidas por meio de módulos ou bibliotecas. Um módulo é um arquivo Python que contém funções, classes e variáveis que podem ser importadas e usadas em outros programas. As bibliotecas são coleções de módulos relacionados que fornecem funcionalidades específicas. Por exemplo, a biblioteca requests oferece uma API para fazer solicitações HTTP.
+
+> RESTful APIs: As APIs RESTful (Representational State Transfer) são um tipo comum de API que segue princípios de design específicos. Elas usam os métodos HTTP (como GET, POST, PUT e DELETE) para realizar operações em recursos, que são representados por URLs. As APIs RESTful são frequentemente usadas em serviços da web.
+
+> JSON e XML: As APIs frequentemente trocam dados em formatos como JSON (JavaScript Object Notation) ou XML (eXtensible Markup Language). Esses formatos são usados para serializar dados de forma que possam ser transmitidos entre sistemas.
+
+> Documentação de API: Boas APIs geralmente vêm com documentação que descreve como usá-las, incluindo uma lista de endpoints, métodos disponíveis e exemplos de solicitações e respostas.
+
+> Chaves de API: Alguns serviços que fornecem APIs requerem que os desenvolvedores obtenham uma chave de API (API key) para autenticação. Essa chave é usada para identificar o desenvolvedor e controlar o acesso à API.
+
+> Uso de APIs em Python: Para usar uma API em Python, os desenvolvedores normalmente fazem solicitações HTTP usando bibliotecas como requests. Os dados da resposta podem ser processados e utilizados em seus programas.
+
+> Exemplos de APIs em Python: Existem APIs disponíveis para uma variedade de finalidades em Python, como acesso a serviços da web (por exemplo, a API do Twitter), integração de bancos de dados, automação de tarefas, aprendizado de máquina e muito mais.
+
+
+20. Onde encontrar API's Oficiais e Não Oficiais?
+R20:. Por que ter? Para poder ter a chance de fazer vários projetos diferentes e desenvolver integrações diferenciadas.
+-> https://github.com/realpython/list-of-python-api-wrappers  (Várias API's) - ​APIs que possuem documentação em Python.
+
+-> https://github.com/public-apis/public-apis (Lista de API's públicos)
+
+-> https://github.com/n0shake/Public-APIs  (Lista de API's públicos)
+
+-> https://github.com/search?q=api+list&type=Repositories  (Lista de API's públicos)
+
+E para encontrar API's não oficiais basta entrar no google e pesquisar assim: <conteundo que quero> unnofficial api. Com isso vai encontrar vários diferentes. 
 
 
 
