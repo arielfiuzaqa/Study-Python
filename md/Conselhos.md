@@ -125,6 +125,41 @@ Utilizadas como:
 
 > Exemplos de APIs em Python: Existem APIs disponíveis para uma variedade de finalidades em Python, como acesso a serviços da web (por exemplo, a API do Twitter), integração de bancos de dados, automação de tarefas, aprendizado de máquina e muito mais.
 
+Toda API possui 4 Partes Básicas
+
+1 - URL BASE (http://dummy.restapiexample.com/)
+2 - ENDPOINT (O que vem depois da url base /exemplo1 , /exemplo2, etc)
+3 - RECURSO (Tudo que é retornado da api que considerado como recurso ou resource)
+4 - VERBOS HTTP (GET/ POST/ PUT/ DELETE - O que o resource usa para se comunicar)
+    GET - Obter dados existentes
+    POST - Enviar dados
+    PUT - Atualizar os dados
+    DELETE - Excluir os dados
+
+STATUS CODE (números identificadores que nos ajudam a ler e identificar se esta ou não funcionando)
+    1xx: INFORMAÇÃO - Informações sobre processamento em andamento
+    2xx: SUCESSO - A requisição foi bem sucedida
+    3xx: REDIRECIONAMENTO - Requisição redirecionada
+    4xx: ERRO DO CLIENTE - Erro no lado do cliente
+    5xx: ERRO SERVIDOR - Erros no servidor
+
+Ou Seja, as APIs são formadas por URL BASE + ENDPOINT
+Já o que recebemos dela é chamado de RECURSO -> RESOURCE
+E a forma como ele se comunica é através dos verbos HTTP
+
+    APIs RESTFUL
+- Stateless - Sem estado
+- Cliente-servidor - Clien-server
+- Cacheable - Capaz de armazenar informações temporárias
+- Layered system - Sistema em camadas
+- Code on demand - Código na demanda
+- Uniform interface - Interfase uniforme
+- Resource identification - Identificação de recursos
+- Manipulation of resources through representations - Manipulação de recursos através de representações
+- Self-descriptive messages - Mensagens auto-descritivas
+- Hypermedia as the engine of application state - Mídia hipermédia como mecanismo de estados de aplicativos
+
+    
 
 20. Onde encontrar API's Oficiais e Não Oficiais?
 R20:. Por que ter? Para poder ter a chance de fazer vários projetos diferentes e desenvolver integrações diferenciadas.
@@ -138,8 +173,11 @@ R20:. Por que ter? Para poder ter a chance de fazer vários projetos diferentes 
 
 E para encontrar API's não oficiais basta entrar no google e pesquisar assim: <conteundo que quero> unnofficial api. Com isso vai encontrar vários diferentes. 
 
+Use para os exercicios https://jsonplaceholder.typicode.com/
 
 
+21. 
+R21:. 
 
 ======================================================= Resumão =======================================================
 O processo de aprendizado da programação envolve muitos conceitos, técnicas e práticas. Aqui está os pilares principais que devem ser um guia para a construção do meu aprendizado.
