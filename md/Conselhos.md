@@ -159,7 +159,6 @@ E a forma como ele se comunica é através dos verbos HTTP
 - Self-descriptive messages - Mensagens auto-descritivas
 - Hypermedia as the engine of application state - Mídia hipermédia como mecanismo de estados de aplicativos
 
-    
 
 20. Onde encontrar API's Oficiais e Não Oficiais?
 R20:. Por que ter? Para poder ter a chance de fazer vários projetos diferentes e desenvolver integrações diferenciadas.
@@ -174,6 +173,14 @@ R20:. Por que ter? Para poder ter a chance de fazer vários projetos diferentes 
 E para encontrar API's não oficiais basta entrar no google e pesquisar assim: <conteundo que quero> unnofficial api. Com isso vai encontrar vários diferentes. 
 
 Use para os exercicios https://jsonplaceholder.typicode.com/
+
+Dois grandes players na criação de API
+Django(Framework completo) e Flask(Micro-framework)
+
+Flask Restful: Biblioteca extra - Quem é mais avançado pode usar.
+
+Flask: 
+
 
 
 21. 
@@ -192,12 +199,12 @@ O processo de aprendizado da programação envolve muitos conceitos, técnicas e
 
 5° Classes: As classes servem para organizar nosso código, reutiliza-lo como comportamento, herdar e controlar propriedades, gerenciar dados e instâncias dentro do nosso código.
 
-
-
-
 ====================================================================================================================
 Aulas Muito importantes
 
 Capitulo 8 - aula 9 - Como PUBLICAR SEU pacote para Pypi
+Capitulo 8 - aula 10 - Venv - Criando um ambiente virtual
 
+Capitulo 9 - aula 8 - Get (Obter recurso) e como criar uma API
+Capitulo 9 - Completo
 
