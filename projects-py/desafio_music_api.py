@@ -21,15 +21,14 @@ cancoes = [
     }
 ]
 
-@app.route('/cancao', methods=['GET']) # Todos os itens
+@app.route('/cancoes', methods=['GET']) # Todos os itens http://localhost:5000/cancoes
 def obter_todas_cancoes():
     return jsonify(cancoes)
 
 
-@app.route('/cancoes/<int:cancao_id>', methods=['GET']) # Item especifico
-def obter_todas_cancoes():
-    return jsonify(cancoes)
-
+@app.route('/cancoes/<int:cancao_id>', methods=['GET']) # Item especifico http://localhost:5000/cancoes/1
+def obter_todas_por_id(cancao_id):
+    return jsonify(cancoes[cancao_id])
 
 @app.route('/cancoes', methods=["POST"]) # ADD Nova canção
 def nova_cancao():
@@ -46,5 +45,10 @@ def atualizar_campo(cancao_id):
 
 @app.route('/cancoes/<int:cancao_id>', methods=['DELETE'])
 def remover_cancao(cancao_id):
-    del cancoes[cancao_id]
-    return jsonify({'mensagem': 'A canção foi excluída com sucesso'})
+    try:
+        del cancoes[cancao_id]
+        return jsonify({'mensagem': 'A canção foi excluída com sucesso'})
+    except:
+        return jsonify('Não foi encontrado uma canção com este id', 404)
+    
+app.run(port=5000, host='localhost', debug=True)
