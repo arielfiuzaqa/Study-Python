@@ -183,8 +183,10 @@ Flask:
 
 
 
-21. 
+21. Como usar banco de dados e comandos SQL com Python?
 R21:. 
+
+1 - Baixe o DB Browser (SQLite) 
 
 ======================================================= Resumão =======================================================
 O processo de aprendizado da programação envolve muitos conceitos, técnicas e práticas. Aqui está os pilares principais que devem ser um guia para a construção do meu aprendizado.

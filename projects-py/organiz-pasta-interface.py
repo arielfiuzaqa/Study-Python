@@ -38,7 +38,8 @@ mapeamento_extensoes = {
     'xlsx': 'Planilhas',
     'pptx': 'Presentações',
     'png': 'ImagensPNG',
-    'gif': 'GIFs'
+    'gif': 'GIFs',
+    'docx': 'DOCX'
     # Adicione mais extensões e diretórios conforme necessário
 }
 
