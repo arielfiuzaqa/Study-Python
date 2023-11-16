@@ -184,9 +184,18 @@ Flask:
 
 
 21. Como usar banco de dados e comandos SQL com Python?
-R21:. 
+R21:. Banco de dados são usados para guardar de forma mais permanente informações sobre nossas aplicações. São como tabelas do excel com a diferença que esses dados podem ser alterados e encontrados com facilidade e por comandos.
+
+No python já temos instalado o db.sqlite3 que é um banco de dados leve que já vem instalado de forma nativa usado para fazer testes.
 
 1 - Baixe o DB Browser (SQLite) 
+2 - Escolha o sistema operacional e baixe
+3 - Instale o SQLite
+4 - Abra o SQLite Manager
+5 - Crie um novo projeto
+6 - Clique no botão direito do mouse e clique em "New Database"
+7 - Dê um nome ao seu banco de dados
+8 - Clique em criar
 
 ======================================================= Resumão =======================================================
 O processo de aprendizado da programação envolve muitos conceitos, técnicas e práticas. Aqui está os pilares principais que devem ser um guia para a construção do meu aprendizado.
