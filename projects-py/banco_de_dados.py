@@ -24,5 +24,6 @@ with sqlite3.connect("artistas.db") as conexao:
 
     # Exibir dados no console python(terminal)
     sql.execute("select * from banda;")
+    bandas = sql.fetchall()
     for banda in bandas:
         print(banda)

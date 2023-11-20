@@ -197,6 +197,10 @@ No python já temos instalado o db.sqlite3 que é um banco de dados leve que já
 7 - Dê um nome ao seu banco de dados
 8 - Clique em criar
 
+Usando a biblioteca SQL alchemy é possível fazer códigos SQL mesmo não sabendo os códigos SQL (https://flask-sqlalchemy.palletsprojects.com/en/2.x/models/)
+
+
+
 ======================================================= Resumão =======================================================
 O processo de aprendizado da programação envolve muitos conceitos, técnicas e práticas. Aqui está os pilares principais que devem ser um guia para a construção do meu aprendizado.
 
