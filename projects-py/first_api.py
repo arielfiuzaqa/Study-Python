@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request
+from ..aprendizados.estrutura_banco_de_dados import Autor, Postagem
 
 # Defina o objetivo da api - Nesse Caso é um blog, onde posso: Consultar, editar, criar e excluir postagens usando api
 
@@ -53,5 +54,27 @@ def excluir_postagem(indice):
             return jsonify(f'Foi excluido com sucesso {postagens[indice]}', 200)
     except:
         return jsonify('Não foi possível encontrar a postagem para exclusão', 404)
+    
+
+@app.route('/autores')
+def obter_autores():
+    pass
+
+@app.route('/autores/<int:id_autor>',methods=['GET'])
+def obter_autor_por_id(id_autor):
+    pass
+
+@app.route('/autores',methods=['POST'])
+def novo_autor():
+    pass
+
+@app.route('/autores/<int:id_autor>',methods=['PUT'])
+def alterar_autor(id_autor):
+    pass
+
+@app.route('/autores/<int:id_autor>',methods=['DELETE'])
+def excluir_autor(id_autor):
+    pass
+
 
 app.run(port=5000, host='localhost', debug=True)
